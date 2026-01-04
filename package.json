@@ -1,10 +1,10 @@
 {
-  "name": "template-clcmo",
+  "name": "mystic-path",
   "version": "0.0.0-development",
   "description": "Template de projeto para publicação com Semantic Release",
   "repository": {
     "type": "git",
-    "url": "https://github.com/clcmo/template.git"
+    "url": "https://github.com/studiourbanna/MysticPath.git"
   },
   "author": "Camila <milla@apprendendo.blog>",
   "license": "MIT",
