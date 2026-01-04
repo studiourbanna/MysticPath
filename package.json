@@ -1,7 +1,7 @@
 {
   "name": "mystic-path",
   "version": "1.0.0",
-  "homepage": "https://studiourbanna.github.io/MysticPath",
+  "homepage": "https://mystic.std.ourbanna.com/",
   "description": "Landing page moderna para serviços de tarot e astrologia",
   "main": "index.js",
   "scripts": {
