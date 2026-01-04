@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/MysticPath/static/css/main.7de82688.css",
+    "main.js": "/MysticPath/static/js/main.4810ab12.js",
+    "index.html": "/MysticPath/index.html",
+    "main.7de82688.css.map": "/MysticPath/static/css/main.7de82688.css.map",
+    "main.4810ab12.js.map": "/MysticPath/static/js/main.4810ab12.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7de82688.css",
+    "static/js/main.4810ab12.js"
+  ]
+}
