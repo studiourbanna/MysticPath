@@ -1,0 +1,266 @@
+/* ============================================================================
+   TAILWIND CSS BASE
+   File: src/styles/tailwind.css
+   ============================================================================ */
+
+/* Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base layer customizations */
+@layer base {
+  /* Reset and base styles */
+  * {
+    @apply box-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+  }
+
+  /* Headings */
+  h1 {
+    @apply text-5xl md:text-7xl font-bold;
+  }
+
+  h2 {
+    @apply text-4xl font-bold;
+  }
+
+  h3 {
+    @apply text-2xl font-bold;
+  }
+
+  h4 {
+    @apply text-xl font-semibold;
+  }
+
+  /* Links */
+  a {
+    @apply transition-opacity duration-200;
+  }
+
+  /* Buttons */
+  button {
+    @apply transition-all duration-300;
+  }
+
+  /* Focus styles for accessibility */
+  a:focus,
+  button:focus,
+  input:focus,
+  textarea:focus,
+  select:focus {
+    @apply outline-none ring-2 ring-purple-500 ring-offset-2;
+  }
+
+  /* Selection */
+  ::selection {
+    @apply bg-purple-400 text-white;
+  }
+
+  ::-moz-selection {
+    @apply bg-purple-400 text-white;
+  }
+}
+
+/* Components layer */
+@layer components {
+  /* Container customization */
+  .container {
+    @apply mx-auto px-4;
+  }
+
+  /* Card component */
+  .card {
+    @apply rounded-2xl shadow-lg transition-all hover:shadow-xl;
+  }
+
+  .card-dark {
+    @apply bg-gray-900 hover:bg-gray-800;
+  }
+
+  .card-light {
+    @apply bg-white hover:bg-gray-50;
+  }
+
+  /* Button variants */
+  .btn-primary {
+    @apply px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105;
+  }
+
+  .btn-primary-dark {
+    @apply bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white shadow-lg;
+  }
+
+  .btn-primary-light {
+    @apply bg-gradient-to-r from-[#7F7CAF] to-[#28587B] text-white hover:shadow-xl;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 rounded-full font-semibold border-2 transition-all;
+  }
+
+  /* Badge */
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold;
+  }
+
+  /* Section spacing */
+  .section {
+    @apply py-20 px-4;
+  }
+
+  /* Text gradients */
+  .text-gradient-purple {
+    @apply bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-blue {
+    @apply bg-gradient-to-r from-[#7F7CAF] to-[#28587B] bg-clip-text text-transparent;
+  }
+
+  /* Glassmorphism effect */
+  .glass {
+    @apply backdrop-blur-md bg-opacity-80;
+  }
+
+  /* Mystic theme colors */
+  .bg-mystic-light {
+    @apply bg-[#EEEEFF];
+  }
+
+  .bg-mystic-purple {
+    @apply bg-[#7F7CAF];
+  }
+
+  .bg-mystic-blue {
+    @apply bg-[#9FB4C7];
+  }
+
+  .bg-mystic-deep {
+    @apply bg-[#28587B];
+  }
+
+  .bg-mystic-sage {
+    @apply bg-[#9FB798];
+  }
+
+  .text-mystic-purple {
+    @apply text-[#7F7CAF];
+  }
+
+  .text-mystic-deep {
+    @apply text-[#28587B];
+  }
+
+  /* Hover effects */
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-2;
+  }
+
+  .hover-glow {
+    @apply transition-shadow duration-300 hover:shadow-2xl;
+  }
+
+  .hover-glow-purple {
+    @apply hover:shadow-purple-500/50;
+  }
+}
+
+/* Utilities layer */
+@layer utilities {
+  /* Custom scrollbar */
+  .scrollbar-mystic::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  .scrollbar-mystic::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  .scrollbar-mystic::-webkit-scrollbar-thumb {
+    @apply bg-[#7F7CAF] rounded-full;
+  }
+
+  .scrollbar-mystic::-webkit-scrollbar-thumb:hover {
+    @apply bg-[#28587B];
+  }
+
+  /* Text shadows */
+  .text-shadow-sm {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .text-shadow-md {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Backdrop blur variants */
+  .backdrop-blur-xs {
+    backdrop-filter: blur(2px);
+  }
+
+  .backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+  }
+
+  /* Aspect ratios */
+  .aspect-square {
+    @apply aspect-[1/1];
+  }
+
+  .aspect-video {
+    @apply aspect-[16/9];
+  }
+
+  /* Truncate text */
+  .truncate-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .truncate-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Gradient borders */
+  .border-gradient-purple {
+    border-image: linear-gradient(to right, #A78BFA, #F472B6) 1;
+  }
+}
+
+/* Dark mode specific styles */
+@media (prefers-color-scheme: dark) {
+  .dark-auto {
+    @apply bg-gray-900 text-gray-100;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    @apply bg-white text-black;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+}

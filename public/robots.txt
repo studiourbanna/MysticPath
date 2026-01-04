@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://std.ourbanna.com/MysticPath/sitemap.xml

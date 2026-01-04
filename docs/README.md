@@ -51,7 +51,7 @@ Landing page moderna e acessível para serviços de tarot e astrologia, constru�
 ```
 ┌─────────────────────────────────────────┐
 │              VIEW                       │
-│  (TarotLandingPage Component)          │
+│  (Mystic Path Component)                │
 │  - UI Components                        │
 │  - User Interactions                    │
 └─────────────┬───────────────────────────┘
@@ -179,7 +179,7 @@ MysticPath/
 
 ### Pré-requisitos
 
-- Node.js 16+ 
+- Node.js 16+
 - npm ou yarn
 
 ### Passos
@@ -191,7 +191,7 @@ git clone https://github.com/studiourbanna/MysticPath.git
 cd MysticPath
 ```
 
-2. **Instale as dependências**
+1. **Instale as dependências**
 
 ```bash
 npm install
@@ -199,7 +199,7 @@ npm install
 yarn install
 ```
 
-3. **Inicie o servidor de desenvolvimento**
+1. **Inicie o servidor de desenvolvimento**
 
 ```bash
 npm start
@@ -207,7 +207,7 @@ npm start
 yarn start
 ```
 
-4. **Acesse no navegador**
+1. **Acesse no navegador**
 
 ```
 http://localhost:3000
@@ -231,6 +231,7 @@ const [analyticsVM] = useState(() =>
 #### Alterar informações de contato
 
 Edite a seção Footer:
+
 ```typescript
 <p>
   Email: seuemail@exemplo.com<br />
@@ -334,7 +335,7 @@ Sitemap: https://seusite.com/sitemap.xml
 analyticsVM.trackEvent('Navigation', 'click', 'services');
 ```
 
-2. **CTAs**
+1. **CTAs**
 
 ```typescript
 analyticsVM.trackEvent('CTA', 'click', 'hero-consultation');
@@ -351,7 +352,7 @@ analyticsVM.trackEvent('CTA', 'click', 'cta-whatsapp');
 
 ### Modo Claro
 
-Baseado em: https://coolors.co/eeeeff-7f7caf-9fb4c7-28587b-9fb798
+Baseado em: <https://coolors.co/eeeeff-7f7caf-9fb4c7-28587b-9fb798>
 
 | Cor | Hex | Uso |
 |-----|-----|-----|
@@ -363,7 +364,7 @@ Baseado em: https://coolors.co/eeeeff-7f7caf-9fb4c7-28587b-9fb798
 
 ### Modo Escuro
 
-Baseado em: https://coolors.co/111827-1f2937-a78bfa-f472b6
+Baseado em: <https://coolors.co/111827-1f2937-a78bfa-f472b6>
 
 | Cor | Hex | Uso |
 |-----|-----|-----|
@@ -461,7 +462,7 @@ Este projeto está sob a licença MIT. Veja `LICENSE` para mais detalhes.
 
 ## 📞 Suporte
 
-- 📧 Email: suporte@std.ourbanna.com
+- 📧 Email: <suporte@std.ourbanna.com>
 - 💬 Issues: [GitHub Issues](https://github.com/studiourbanna/MysticPath/issues)
 - 📚 Docs: [Wiki do Projeto](https://github.com/studiourbanna/MysticPath/wiki)
 

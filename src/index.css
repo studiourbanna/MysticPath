@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-mystic-purple hover:bg-mystic-purple/80 text-white font-semibold py-3 px-6 rounded-lg transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-mystic-pink hover:bg-mystic-pink/80 text-white font-semibold py-3 px-6 rounded-lg transition-colors;
+  }
+
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+}
